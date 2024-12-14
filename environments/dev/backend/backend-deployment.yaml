@@ -26,4 +26,15 @@ spec:
               cpu: "250m"      
             limits:
               memory: "512Mi"  
-              cpu: "500m"      
+              cpu: "500m" 
+          env:
+          - name: ELASTICSEARCH_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: backend-config
+                key: ELASTICSEARCH_HOST
+          - name: ELASTICSEARCH_PORT
+            valueFrom:
+              configMapKeyRef:
+                name: backend-config
+                key: ELASTICSEARCH_PORT     
