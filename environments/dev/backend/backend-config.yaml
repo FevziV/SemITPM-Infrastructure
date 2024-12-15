@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: backend-config
 data:
-  ELASTICSEARCH_HOST: "elasticsearch"  
+  ELASTICSEARCH_HOST: "elasticsearch-service"  
   ELASTICSEARCH_PORT: "9200"
