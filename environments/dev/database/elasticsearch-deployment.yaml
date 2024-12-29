@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: elasticsearch
-          image: feivel123/elasticsearch:v2
+          image: feivel123/elasticsearch:v3
           ports:
             - containerPort: 9200
           env:
